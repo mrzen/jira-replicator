@@ -1,0 +1,7 @@
+[s3]
+region = "eu-west-1"
+bucket = "YOUR_JIRA_BACKUP_BUCKET"
+storage_class = "STANDARD_IA"      # Recommended for backups.
+
+[kms]
+key = "arn:aws:kms:eu-west-1:AWS_ACCOUNT_ID:key/KEY_UUID" # Set this to enable SSE.
